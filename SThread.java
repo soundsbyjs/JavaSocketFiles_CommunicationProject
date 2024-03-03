@@ -14,7 +14,7 @@ public class SThread extends Thread
 	private int ind; // indext in the routing table
 
 	// Constructor
-	SThread(Object [][] Table, Socket toClient, int index) throws IOException
+	public SThread(Object [][] Table, Socket toClient, int index) throws IOException
 	{
 			out = new PrintWriter(toClient.getOutputStream(), true);
 			in = new BufferedReader(new InputStreamReader(toClient.getInputStream()));
